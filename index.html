@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramayanam - Valmiki</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="ramayanam.css">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            background-color: #fdf6e3;
+            color: #5c3d2e;
+            font-family: 'Sanskrit2003', serif;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .kanda-card {
+            background: white;
+            border: 1px solid #e2d1b3;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+        }
+        .kanda-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #8b4513;
+        }
+        .kanda-icon {
+            font-size: 2rem;
+            margin-right: 1.5rem;
+            width: 60px;
+            height: 60px;
+            background: #fdf6e3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .kanda-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            padding: 2rem 1rem;
+        }
+        h1 {
+            color: #8b4513;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ramayanam</h1>
+        <img src="ramapattabhishekam.jpg" alt="Rama Pattabhishekam" class="hero-image">
+        
+        <div class="row">
+            <div class="col-12">
+                <a href="Baalakaandam-newone_split1.html" class="kanda-card">
+                    <div class="kanda-icon">🕉️</div>
+                    <div class="kanda-title">Baala Kaandam</div>
+                </a>
+                <a href="Ayodhyakaandam-newone_split1.html" class="kanda-card">
+                    <div class="kanda-icon">🏹</div>
+                    <div class="kanda-title">Ayodhya Kaandam</div>
+                </a>
+                <a href="Aaranyakaandam-newone_split1.html" class="kanda-card">
+                    <div class="kanda-icon">🌿</div>
+                    <div class="kanda-title">Aaranya Kaandam</div>
+                </a>
+                <a href="Kishkindakaanda-newone_split1.html" class="kanda-card">
+                    <div class="kanda-icon">🐒</div>
+                    <div class="kanda-title">Kishkindaa Kaandam</div>
+                </a>
+                <a href="Sundarakaanda-newone_split1.html" class="kanda-card">
+                    <div class="kanda-icon">💎</div>
+                    <div class="kanda-title">Sundara Kaandam</div>
+                </a>
+                <a href="Yuddhakaanda-newone_split1.html" class="kanda-card">
+                    <div class="kanda-icon">⚔️</div>
+                    <div class="kanda-title">Yuddha Kaandam</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registered', reg))
+                    .catch(err => console.error('Service Worker registration failed', err));
+            });
+        }
+    </script>
+</body>
+</html>
