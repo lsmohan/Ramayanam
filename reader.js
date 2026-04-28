@@ -58,65 +58,88 @@
             left: 0;
             right: 0;
             background: rgba(253, 246, 227, 0.98);
-            border-top: 1px solid #e2d1b3;
-            padding: 8px 10px;
+            border-top: 2px solid #e2d1b3;
+            padding: 12px 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: 0 -4px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
             z-index: 1000;
-            font-family: sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
         }
         .font-controls {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 8px;
+            gap: 20px;
+            margin-bottom: 12px;
             border-bottom: 1px solid #e2d1b3;
-            padding-bottom: 8px;
+            padding-bottom: 12px;
             width: 100%;
             justify-content: center;
         }
         .font-btn {
             background: #fdf6e3;
-            border: 1px solid #8b4513;
+            border: 2px solid #8b4513;
             color: #8b4513;
-            padding: 2px 12px;
-            border-radius: 4px;
+            padding: 8px 20px;
+            border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
+            font-size: 1.1rem;
+            min-width: 60px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         #font-size-display {
-            font-size: 0.9rem;
-            min-width: 50px;
+            font-size: 1rem;
+            min-width: 60px;
             text-align: center;
             color: #8b4513;
+            font-weight: bold;
         }
         .reader-controls {
             display: flex;
-            gap: 15px;
-            margin-bottom: 5px;
+            gap: 12px;
+            margin-bottom: 8px;
+            width: 100%;
+            justify-content: center;
         }
         .nav-btn {
             background: #8b4513;
             color: white;
             border: none;
-            padding: 8px 14px;
-            border-radius: 20px;
+            padding: 12px 0;
+            border-radius: 12px;
             cursor: pointer;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            flex: 1;
+            max-width: 120px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .nav-btn:active {
+            transform: scale(0.95);
+            background: #5c3d2e;
         }
         .nav-btn:disabled {
             background: #ccc;
+            box-shadow: none;
             cursor: not-allowed;
         }
         .reader-progress {
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             color: #5c3d2e;
+            font-weight: 500;
+            margin-top: 4px;
         }
         body {
-            padding-bottom: 120px !important;
+            padding-bottom: 160px !important;
         }
     `;
 
