@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ramayanam-v4';
+const CACHE_NAME = 'ramayanam-v5';
 
 const KANDAS = [
     { id: 'Baalakaandam', splits: 77 },
@@ -34,10 +34,15 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(cache => {
-                console.log('Caching all assets for offline use');
-                return cache.addAll(ALL_ASSETS).catch(e => {
-                    console.log('Some files skipped:', e.message);
-                });
+                console.log('Caching assets individually');
+                return Promise.allSettled(
+                    ALL_ASSETS.map(url => 
+                        fetch(url).then(response => {
+                            if (!response.ok) throw new Error(`Failed to fetch ${url}`);
+                            return cache.put(url, response);
+                        }).catch(err => console.log(`Skipping ${url}: ${err.message}`))
+                    )
+                );
             })
             .then(() => self.skipWaiting())
     );
