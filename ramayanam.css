@@ -1,0 +1,55 @@
+/* Styles for Valmiki Ramayana */
+
+
+@import url("bootstrap.min.css");
+
+@font-face {
+  src: url('Sanskrit2003.ttf');
+  font-family: 'Sanskrit 2003';
+};
+
+body {
+	width: 80%;
+	margin: 5%;
+}
+
+.paragraph {
+    font-size: 1.0em;
+}
+
+.chapter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #E00;
+  text-align: center;
+  line-height: 125%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.shloka {
+  font-size: 1.25em;
+  color: #B00;
+  text-align: center;
+  font-family: "Sanskrit 2003";
+}
+.english-meaning {
+  color: #009;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.english-footnote {
+  color: #866;
+  font-size: 0.9em;
+  text-align: center;
+}
+.shloka-number {
+  font-size: 0.75em;
+}
+
+.commentary {
+  color: #866;
+  font-size: 1em;
+  text-align: center;
+}

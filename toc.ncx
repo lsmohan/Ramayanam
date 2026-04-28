@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta content="3851006c-26ce-4a78-90bf-c265d47f3c17" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (4.4.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Ramayanam</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1">
+      <navLabel>
+        <text>Start</text>
+      </navLabel>
+      <content src="start.xhtml"/>
+    </navPoint>
+    <navPoint id="num_2" playOrder="2">
+      <navLabel>
+        <text>Baalakaandam</text>
+      </navLabel>
+      <content src="Baalakaandam-newone.html"/>
+    </navPoint>
+    <navPoint id="num_3" playOrder="3">
+      <navLabel>
+        <text>Ayodhya Kaandam</text>
+      </navLabel>
+      <content src="Ayodhyakaandam-newone.html"/>
+    </navPoint>
+    <navPoint id="num_4" playOrder="4">
+      <navLabel>
+        <text>Aaranya Kaandam</text>
+      </navLabel>
+      <content src="Aaranyakaandam-newone.html"/>
+    </navPoint>
+    <navPoint id="num_5" playOrder="5">
+      <navLabel>
+        <text>Kishkindaa Kaandam</text>
+      </navLabel>
+      <content src="Kishkindakaanda-newone.html"/>
+    </navPoint>
+    <navPoint id="num_6" playOrder="6">
+      <navLabel>
+        <text>Sundara Kaandam</text>
+      </navLabel>
+      <content src="Sundarakaanda-newone.html"/>
+    </navPoint>
+    <navPoint id="num_7" playOrder="7">
+      <navLabel>
+        <text>Yuddha Kaandam</text>
+      </navLabel>
+      <content src="Yuddhakaanda-newone.html"/>
+    </navPoint>
+  </navMap>
+</ncx>
