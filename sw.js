@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ramayanam-v5';
+const CACHE_NAME = 'ramayanam-v7';
 
 const KANDAS = [
     { id: 'Baalakaandam', splits: 77 },
